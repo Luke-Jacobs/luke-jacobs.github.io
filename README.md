@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+#Intro
 
-You can use the [editor on GitHub](https://github.com/0xA1B2C3/0xa1b2c3.github.com/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+	Python is an incredibly useful tool that can be used in extremely diverse ways. Some of its uses include:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- Artificial Intelligence
+- Complex math models
+- Simple video games
+- Web bots
+- Hosting web sites
 
-### Markdown
+	These uses are fantastic projects, but the greatest benefit in learning Python is how it changes your view of the world. After learning about the fundamentals of Computer Science, you hopefully will not look at the world in the same way. In my experience, I found that computer science helped my understanding of math and vice versa. There is something universal about the two topics that transcends physical computers, like the concepts of vectors and operations on data. Hopefully you will learn to see Computer Science not as a field with a goal of making computers do our jobs, but as a field that allows us to make sense of the world.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#Overview
 
-```markdown
-Syntax highlighted code block
+I like to divide computers into 2 concepts:
 
-# Header 1
-## Header 2
-### Header 3
+-Data (Memories)
+-Operations (Thinking)
 
-- Bulleted
-- List
+Data are the memories of the computer. Computer memories are divided into 2 categories (for simplicity’s sake): short-term and long term memory.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/0xA1B2C3/0xa1b2c3.github.com/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
