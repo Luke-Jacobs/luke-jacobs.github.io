@@ -1,3 +1,8 @@
+---
+layout: default
+title: Intro Page
+---
+
 # Intro
 
 Python is an incredibly useful tool that can be used in extremely diverse ways. Some of its uses include:
