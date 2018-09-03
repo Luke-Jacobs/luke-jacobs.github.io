@@ -1,17 +1,22 @@
 # Functions
 
 Functions give programmers an easy way to organize and break down code. A function simply is a chunk of code that can accept inputs, uses those inputs in some way, and returns an output. You can think of Python functions just like functions in math:
+
+```
 	f(x) = x<sup>2</sup> + 3x + 5
 		or
 	y = x<sup>2</sup> + 3x + 5
-
+```
+	
 This is a function that requires an x value, performs some calculations on that number (some data), and gives us another number (the y value).
 
 We can make the same setup in Python with even more freedom than math:
-	
-	def f(x):
-		return x*x + 3*x + 5
 
+```python
+def f(x):
+	return x*x + 3*x + 5
+```
+	
 (in Python we can’t write 3x because the interpreter gets confused)
 
 While math only lets us use numbers as inputs, Python allows us to use any type of data that we want. We can give a function a list of numbers, a name, GPS coordinates, or all of the book Little Women. We can write a function that does some interesting operations with that data, for example translate its input into Latin or edit the book so that its interesting to read. After it does its assigned operation, it (usually) returns data to its caller.
