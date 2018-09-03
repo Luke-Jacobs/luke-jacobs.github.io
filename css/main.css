@@ -1,6 +1,7 @@
 body { margin: 30px auto; width: 70%;}
 
 .container.content { margin-bottom: 20px; font-family: 'Open Sans', sans-serif;}
+.dropdown { display: inline; }
 
 a { text-decoration: none; color: #999; }
 a:hover { text-decoration: underline; }
@@ -13,3 +14,4 @@ nav ul, footer ul { font-size: 1em; font-family: 'Open Sans', sans-serif; paddin
 nav ul li, footer ul li { display: inline; margin-right: 20px; }
 
 footer { border-top: 1px solid #d5d5d5; font-size: .8em; }
+
