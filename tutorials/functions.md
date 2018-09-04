@@ -1,3 +1,8 @@
+---
+layout: default
+title: Functions
+---
+
 # Functions
 
 Functions give programmers an easy way to organize and break down code. A function simply is a chunk of code that can accept inputs, uses those inputs in some way, and returns an output. You can think of Python functions just like functions in math:

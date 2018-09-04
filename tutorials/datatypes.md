@@ -1,3 +1,9 @@
+---
+layout: jumbotron
+title: Data Types
+jumboimage: /tutorials/imgs/data.jpg
+---
+
 # Data Types
 
 The main point I want you to come away with after reading this lesson is that some types of data are treated differently than other types of data.
