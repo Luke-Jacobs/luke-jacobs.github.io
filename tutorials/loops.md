@@ -1,6 +1,7 @@
 ---
 title: Loops
 layout: jumbotron
+jumboimage: imgs/loops.webp
 ---
 
 Loops do the heavy lifting in a program, allowing it to do things that humans cannot. For example, a security system might have a loop integrated into its program to check a camera once every second. Computers are always vigilant, unlike some security guards, and you don't have to pay them.
