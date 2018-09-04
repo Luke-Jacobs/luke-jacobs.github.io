@@ -4,8 +4,6 @@ title: Data Types
 jumboimage: /tutorials/imgs/data.jpg
 ---
 
-# Data Types
-
 The main point I want you to come away with after reading this lesson is that some types of data are treated differently than other types of data.
 
 For example, says you have a temperature reading in Celsius and a list of student names. With a list, you can sort its individual elements and order them nicely, but you can't do that with a single data point. With a Celsius temperature value, you can convert that value to a temperature in Fahrenheit, but you can't convert a list of names into a Fahrenheit number. It just doesn't make sense. 
