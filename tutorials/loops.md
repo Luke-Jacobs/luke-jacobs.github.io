@@ -20,7 +20,7 @@ for loop_variable in iterable_variable:
 	here
 ```
 
-For example:
+A specific example:
 
 ```python
 toDoList = ["eat brick", "fly sideways", "photograph the moon"] #initialize todo list
@@ -40,20 +40,20 @@ for i in range(1, 100):
 print n
 ```  
 
-Let's explain what's going on here. On the first line, `n` is set to the value of 1. On the next line, the loop is setup: `i` is our loop variable and `range(1, 100)` is our iterable variable. This means that Python will cycle through the contents of `range(1, 100)` and for each item in that variable, `i` will be set to that variable. So on the first loop `i` is equal to 1. On the next loop `i` is equal to 2, and so on. The third line is the indented, so this will be the code that we will run for each item in our iterable. In this case, `n` is being set to its current value times the value of `i`. This means that `n` is always getting larger in value, because `i` is growing in value as the program runs. 
+Let's explain what's going on here. On the first line, `n` is set to the value of 1. On the next line, the loop is setup: `i` is our loop variable and `range(1, 100)` is our iterable variable. This means that Python will cycle through the contents of `range(1, 100)` and for each item in that variable, `i` will be set to that variable. So on the first loop `i` is equal to 1. On the next loop `i` is equal to 2, and so on. The third line is the indented, so this will be the code that we will run for each item in our iterable. In this case, `n` is being set to its current value times the value of `i`. This means that `n` is always getting larger in value, because `i` is growing in value as the program runs. At the end of the program, the value of `n` will be the product of all the numbers from 1 to 100!
 
 This is a real-world example of some code I wrote to automatically download NY Times articles from their database. (I didn't do this because I love their article, but because I wanted a computer to replicate their headlines.) I don't expect you to understand much of it:
 
-#Real-World Example
+# Real-World Example
 ```python
-   for year in years:
-       data = collectInfoByYear(year, keys)
-       print("Writing %d year info to %s..." % (year, filename))
-       fp.write(data)
+for year in years:
+    data = collectInfoByYear(year, keys)
+    print("Writing %d year info to %s..." % (year, filename))
+    fp.write(data)
 ```
 
 This code block writes NY Times article properties to a file given a range of years. I chose to grab all the article data from 1852 to 2017. I'm so glad I don't pay for internet by the byte!
 
-#Exercises
-
+# Exercises
+Write a program to 
 
