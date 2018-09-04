@@ -8,9 +8,9 @@ title: Functions
 Functions give programmers an easy way to organize and break down code. A function simply is a chunk of code that can accept inputs, uses those inputs in some way, and returns an output. You can think of Python functions just like functions in math:
 
 
-	f(x) = x<sup>2</sup> + 3x + 5
-		or
-	y = x<sup>2</sup> + 3x + 5
+f(x) = x<sup>2</sup> + 3x + 5
+	or
+y = x<sup>2</sup> + 3x + 5
 
 	
 This is a function that requires an x value, performs some calculations on that number (some data), and gives us another number (the y value).
