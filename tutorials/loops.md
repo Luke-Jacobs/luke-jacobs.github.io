@@ -14,6 +14,7 @@ There are two types of loops in Python:
 Don't worry if those definitions are confusing, because I'll be explaining them. A `for` loop iterates (or cycles) through an iterable variable, like a list. On each cycle, the **loop variable** is set to a different value. This is the format for a `for` loop (remember this!):
 
 # For Loop Format
+
 ```python
 for loop_variable in iterable_variable:
 	do
@@ -46,6 +47,7 @@ Let's explain what's going on here. On the first line, `n` is set to the value o
 This is a real-world example of some code I wrote to automatically download NY Times articles from their database. (I didn't do this because I love their article, but because I wanted a computer to replicate their headlines.) I don't expect you to understand much of it:
 
 # Real-World Example
+
 ```python
 for year in years:
     data = collectInfoByYear(year, keys)
@@ -56,5 +58,5 @@ for year in years:
 This code block writes NY Times article properties to a file given a range of years. I chose to grab all the article data from 1852 to 2017. I'm so glad I don't pay for internet by the byte!
 
 # Exercises
-Write a program to 
+Write a program to add all the numbers from 50 to 100
 
