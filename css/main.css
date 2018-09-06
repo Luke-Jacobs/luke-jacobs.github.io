@@ -12,8 +12,8 @@ ul li ul li { font-size: 1em; }
 
 h1, h2, h3, h4, p { font-family: 'Open Sans', sans-serif; }
 
-nav ul, footer ul { font-size: 1em; font-family: 'Open Sans', sans-serif; padding: 0px; list-style: none; }
+nav ul, footer ul { font-size: .75em; font-family: 'Open Sans', sans-serif; padding: 0px; list-style: none; }
+nav .navbar-brand { font-size: 2em; }
 nav ul li, footer ul li { display: inline; margin-right: 20px; }
 
 footer { border-top: 1px solid #d5d5d5; font-size: .8em; }
-
