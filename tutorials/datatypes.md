@@ -16,7 +16,8 @@ This is why there are different types of variables in Python. Here is a list of 
 - Floating-Point Number 
   - any real number 
   - 8.678, -5.67, 1.0
-- String - a sequence of characters 
+- String 
+  - a sequence of characters 
   - "Some random text"
 - List 
   - a collection of other variables 
