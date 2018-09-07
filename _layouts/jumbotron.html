@@ -26,7 +26,7 @@
                       <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="tutorials">List</a>
 						  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  	   <li><a class="dropdown-item" href="/tutorials/intro">1. Intro</a></li>
+						  	   <li><a class="dropdown-item" href="/tutorials/intro_to_python">1. Intro to Python</a></li>
 						  	   <li><a class="dropdown-item" href="/tutorials/datatypes">2. Data Types</a></li>
 							   <li><a class="dropdown-item" href="/tutorials/functions">3. Functions</a></li>
 							   <li><a class="dropdown-item" href="/tutorials/loops">4. Loops</a></li>
@@ -43,6 +43,14 @@
         <div class="container content">
             {{ content }}
         </div>
+		
+		<hr>
+        
+		<div class="container bottom-nav">
+        	<a href="{{ page.next }}" style="text-align: left"><h3 style="text-align: center;">Next lession</h3></a>
+        	<a href="{{ page.back }}" style="text-align: right"><h3 style="text-align: center;">Previous lession</h3></a><br>
+		</div>
+		
         <footer>
             <ul>
                 <li>Python tutorial site by Luke Jacobs

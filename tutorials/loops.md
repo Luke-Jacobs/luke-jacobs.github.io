@@ -1,6 +1,8 @@
 ---
 title: Loops
 layout: jumbotron
+next: #
+back: /tutorials/functions
 jumboimage: /tutorials/imgs/loops.png
 ---
 

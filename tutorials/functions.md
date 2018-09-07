@@ -1,5 +1,7 @@
 ---
 layout: default
+next: /tutorials/loops
+back: /tutorials/intro_to_python
 title: Functions
 ---
 
