@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: lesson
 next: /tutorials/loops
 back: /tutorials/intro_to_python
 title: Functions
@@ -11,7 +11,9 @@ Functions give programmers an easy way to organize and break down code. A functi
 
 
 f(x) = x<sup>2</sup> + 3x + 5
+
 	or
+
 y = x<sup>2</sup> + 3x + 5
 
 	
