@@ -26,6 +26,8 @@ def f(x):
 
 While math only lets us use numbers as inputs, Python allows us to use any type of data that we want. We can give a function a list of numbers, a name, GPS coordinates, or all of the book Little Women. We can write a function that does some interesting operations with that data, for example translate its input into Latin or edit the book so that its interesting to read. After it does its assigned operation, it (usually) returns data to its caller.
 
+![Hierarchy](imgs/hierarchy_of_people.jpg)
+
 The best analogy I have to functions is a hired worker. Hired workers are given an assignment to complete, and then after they are done, they return to their boss with their completed work. In an effective company, workers are assigned a position on a hierarchy of roles. There are the grunt workers who just do what they are told, the managers who tell the grunts what to do, and the branch managers who tell the managers what to do, etc, etc. This method works much better than 1000s of workers trying to coordinate with each other or 1 manager managing everyone. The workload is distributed well, so the company does well. 
 
 As programmers, we are CEOs trying to build a company from the top down. We have a big job in our heads that we need to turn into functional code. We have to split that big job into little jobs and then split those little jobs into tiny jobs. 

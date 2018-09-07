@@ -70,6 +70,7 @@ myName = "Caillou the Great"
 myFavoriteSong = "The Grinch Song sung by Gabe"
 myNickname = "Luke" + "Jacobs" #this combines the strings "Luke" and "Jacobs" together but DOES NOT PUT A SPACE IN BETWEEN THEM
 
+
 ```
 
 # Exercises
