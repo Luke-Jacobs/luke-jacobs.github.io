@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Python Intro
+title: Intro to Python
 ---
 
 # Intro
@@ -24,7 +24,9 @@ Hopefully you will learn to see Computer Science not as a field with a goal of m
 I like to divide computers into 2 concepts:
 
 - Data (Memories)
-- Operations (Thinking)
+- Operations (Thinking and Actions)
 
-Data are the memories of the computer. Computer memories are divided into 2 categories (for simplicity’s sake): short-term and long term memory.
+Data are the memories of the computer, like human memories except in binary code. Operations are what the computer does, and you can think of them as what the computer thinks about and acts out. My tutorials will cover both of these aspects of programming; you will learn how to write operations to manipulate data. 
+
+Some people drop the activity of learning programming because they think it is too hard. It might look daunting at first, but I assure you that the rewards of learning this skill are great. It is important to know that the rewards of programming mostly come after the learning process, so don't give up hope if you think that you aren't doing anything useful. You only truely realize the uses of programming after you have learned it!
 
