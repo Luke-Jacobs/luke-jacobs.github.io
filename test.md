@@ -1,5 +1,6 @@
 ---
 title: Test
+layout: none
 ---
 
 ```python
