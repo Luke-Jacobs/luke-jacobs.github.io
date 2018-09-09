@@ -1,7 +1,7 @@
 ---
 layout: lesson
 next: /tutorials/loops
-back: /tutorials/intro_to_python
+back: /tutorials/operators
 title: Functions
 ---
 

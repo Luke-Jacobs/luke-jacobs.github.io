@@ -2,7 +2,7 @@
 layout: jumbotron
 title: Intro to Variables
 next: /tutorials/operators
-back: #
+back: /tutorials/intro_to_python
 jumboimage: /tutorials/imgs/data.jpg
 ---
 
