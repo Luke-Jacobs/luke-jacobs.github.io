@@ -1,7 +1,7 @@
 ---
 layout: jumbotron
 title: Intro to Variables
-next: /tutorials/functions
+next: /tutorials/operators
 back: #
 jumboimage: /tutorials/imgs/data.jpg
 ---
@@ -88,4 +88,6 @@ myFile = open("mychristmaslist.txt", "r") #this opens the file "mychristmaslist.
 1. I named my variable `3 blind mice` and Python gave me an error! Why did this happen?
 2. Why are there different data types in Python?
 3. Write a program that initializes a variable with the value of 2 times 8 times 9.
+4. Write a program that initializes two variables with float values, multiplies them together, and stores that value in a variable named `result`
+
   

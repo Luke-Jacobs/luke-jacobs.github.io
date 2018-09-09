@@ -60,5 +60,6 @@ for year in years:
 This code block writes NY Times article properties to a file given a range of years. I chose to grab all the article data from 1852 to 2017. I'm so glad I don't pay for internet by the byte!
 
 # Exercises
-Write a program to add all the numbers from 50 to 100
+
+1. Write a program to add all the numbers from 50 to 100.
 
