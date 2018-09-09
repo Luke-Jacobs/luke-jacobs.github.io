@@ -98,7 +98,7 @@ a /= b #a is now 5
 
 These operators perform logic on two booleans (a true or false value). They are normally used to combine comparison operators so that the program can make multiple comparisons at once. What is awesome about computer science is that it is built on logic, and I know that all of you are either taking logic or have taken logic, so you should be able to apply some of your logic skills to programming! Here are some examples:
 
-### and
+## and
 
 This operator evaluates to `True` if BOTH operands are `True`. 
 
@@ -113,7 +113,7 @@ myName == "LJ" and myGrade > 76.0 #this is true because myName equals "LJ" AND m
 myName == "lj" and myGrade > 50.0 #this is false because myName is not equal to "lj" (even if myGrade is greater than 50.0, the expression is still false because one operand is false)
 ```
 
-### or
+## or
 
 This operator evaluates to `True` if EITHER operands are `True`
 
@@ -127,7 +127,7 @@ hasSeasonTicket = False
 hasGameTicket or hasSeasonTicket #this is true because at least one operand is true
 ```
 
-### not
+## not
 
 This operator simply makes True False and False True. It flips the value of booleans.
 
