@@ -1,8 +1,8 @@
 ---
 title: Strings
 next: /tutorials/functions
-back: /tutorials/intro_to_python
-layout: lesson
+back: /tutorials/operators
+layout: jumbotron
 ---
 
 # What are strings?
