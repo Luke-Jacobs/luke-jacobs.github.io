@@ -80,7 +80,7 @@ while expression:
 	here
 ```
 
-This is where comparison operators come into play
+This is where comparison operators come into play -------
 
 # Real-World Example
 

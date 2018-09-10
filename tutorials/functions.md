@@ -1,13 +1,13 @@
 ---
 layout: lesson
-next: /tutorials/loops
-back: /tutorials/operators
+next: /tutorials/#
+back: /tutorials/loops
 title: Functions
 ---
 
 # Functions
 
-Functions give programmers an easy way to organize and break down code. A function in a broad sense is a chunk of code that can accept inputs, uses those inputs in some way, and returns an output. You can think of Python functions just like functions in math:
+Functions give programmers an easy way to organize and break down code. A function in a broad sense is a chunk of code that can accept inputs, use those inputs in some way, and return an output. You can think of Python functions just like functions in math:
 
 f(x) = x<sup>2</sup> + 3x + 5
 

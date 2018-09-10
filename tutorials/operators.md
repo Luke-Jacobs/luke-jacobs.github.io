@@ -1,7 +1,7 @@
 ---
 layout: jumbotron
 title: Operators
-next: /tutorials/functions
+next: /tutorials/loops
 back: /tutorials/intro_to_python
 jumboimage: #
 ---

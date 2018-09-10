@@ -15,4 +15,4 @@ You might be wondering what char, dec, oct, and hex stand for. Well, char just m
 
 # What can I do with strings?
 
-Strings are sequences, so 
+The 
