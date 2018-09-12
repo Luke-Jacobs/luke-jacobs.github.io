@@ -1,5 +1,5 @@
 ---
-title: Loops
+title: Loops (Not Finished)
 layout: jumbotron
 next: /tutorials/strings
 back: /tutorials/operators
