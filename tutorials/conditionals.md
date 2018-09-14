@@ -49,4 +49,53 @@ This example greets someone based on their name. If the person's name is "Mr Ste
 
 ![If Example Flowchart](imgs/flowchart_ifexample.png)
 
+This flowchart helps you see all the branches that a program can go down. In a real-world program, you might see thousands of branches leading to thousands of other branches, allowing the program to end up in **millions** of different places. 
+
+```python
+#Example 1
+if True:
+	#this code is ALWAYS run
+elif True:
+	#this code is NEVER run, since the condition before it is ALWAYS true
+else True:
+	#this code is NEVER run, since at least one condition before it is true
+	
+#Example 2
+if 2 + 2 == 5:
+	#this code is NEVER run, since the condition is ALWAYS False
+elif False:
+	#this code is ALWAYS run, since the condition before it is false and this condition is ALWAYS true
+	
+#Example 3
+myBackpackWeight = 250.76 #weight in pounds
+
+if myBackpackWeight < 0:
+	print "How is this possible?" #run if weight is negative
+elif myBackpackWeight < 5:
+	print "Your backpack is pretty light!" #run if 0 < weight < 5
+elif myBackpackWeight < 15: 
+	print "Your backpack is average." #run if 5 < weight < 15
+elif myBackpackWeight < 30:
+	print "You must have an AP Bio book in there!" #run if 15 < weight < 30
+else:
+	print "You need to see a chiropractor!" #run if weight >= 30
+```
+
+# Exercises
+
+1. Is `(True and False) or (False)` equal to `True` or `False`?
+2. What is the use of conditionals to programmers?
+3. What does `elif` stand for and what is its purpose?
+4. What might be one example of a program that uses a conditional?
+5. When does an `else` block run?
+6. What is the value of `a` after this code?
+
+   ```python
+   if (7 == 0) and (b == 5):
+       a = 10
+   elif 0 < -7:
+       a = 7
+   else:
+   	   a = 4
+   ```
 
