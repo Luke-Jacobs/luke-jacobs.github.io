@@ -79,7 +79,11 @@ elif myBackpackWeight < 30:
 	print "You must have an AP Bio book in there!" #run if 15 < weight < 30
 else:
 	print "You need to see a chiropractor!" #run if weight >= 30
+
+print "Goodbye sir!"
 ```
+
+![Backpack Program Flowchart](imgs/flowchart_backpack_example.png)
 
 # Exercises
 
@@ -96,6 +100,6 @@ else:
    elif 0 < -7:
        a = 7
    else:
-   	   a = 4
+       a = 4
    ```
-7. Write a conditional that prints 
+7. Write a conditional that prints `"Bust!"` if `cardsValue` is greater than 21 and `"Hit or Stand?"` if `cardsValue` is less than that amount.
