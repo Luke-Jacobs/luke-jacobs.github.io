@@ -1,5 +1,5 @@
 ---
-title: Strings
+title: Strings (Not Finished)
 next: /tutorials/functions
 back: /tutorials/operators
 layout: jumbotron
@@ -15,4 +15,73 @@ You might be wondering what char, dec, oct, and hex stand for. Well, char just m
 
 # What can I do with strings?
 
-The 
+There are VERY many uses of strings, so I'll cover the ones I use most often. 
+
+# String Splicing
+
+First, you need to understand string splicing. String splicing is the operation of cutting up a big string into what are called **substrings**. Substrings are pieces of a big string. Here is a helpful image that demonstrates how to program this operation:
+
+![String Splicing](imgs/strings_example0.png)
+
+Programming languages start counting **indices** (the plural of index) at 0. This means that the first letter of a string is at index 0, and the second letter of a string is at index 1, etc until the end of the string. This means that:
+
+```python
+myString = "Computer Science"
+
+print myString[0] #this prints "C"
+print myString[1] #this prints "o"
+```
+
+Using one index allows you to grab one letter. But what if we wanted to grab an entire section from a string? That requires using multiple indices. Here is the format for string splicing:
+
+# String Splicing Format
+```python
+myStringVariable[start:end:step]
+```
+
+You need to know what **start**, **end**, and **step** mean. **start** is the start index that points to the first character of a substring. **end** is the index of the first letter that is NOT INCLUDED in the substring. For example, if your start index is 0, then that means your substring will start at the first character in a string. If your end index is 9, your substring will STOP BEFORE the 10th character in the string, since the index of 9 is the same thing as the 10th character (because Python starts counting at 0). Here are some examples:
+
+```python
+myString = "Computer Science"
+#           0123456789012345
+
+print myString[0:8] #this prints "Computer"
+print myString[9:16] #this prints "Science"
+print myString[1:7] #this prints "ompute"
+print myString[0:16] #this prints "Computer Science"
+print myString[0:1] #this prints "C"
+```
+
+You can also **omit start and end**. If you omit the start index, Python will assume you mean to start your substring at the very beginning of the string. If you omit the end index, Python will assume you want your substring to continue all the way to the end of the string. Here are some examples of omitting start and end indices:
+
+```python
+mySchool = "Naperville Christian Academy"
+
+print mySchool[:5] #this is an omission of the start index, and it will print "Naper"
+print mySchool[11:] #this is an omission of the end index, and it will print "Christian Academy"
+print mySchool[::] #this is an omission of both indices, and it is the same thing as printing mySchool without any splicing
+```
+
+# Split
+
+This is a string operation that I use ALOT. This operation splits a string into substrings at a **separator**. Python uses the **separator** as a place to cut a string. This operation allows us to iterate through parts of a string. We can essentially convert a string into a list of small strings. Here are some examples of the split operation:
+
+```python
+TBA
+```
+
+# Real-World Examples
+
+```python
+myBadAverage = 0.0
+aStringOfSomeBadGrades = "30.76, 64.32, 21.0, 34.98, 54.36" #this is the string we are going to be dissecting
+aListOfSomeBadGrades = aStringOfSomeBadGrades.split(", ") #this splits aStringOfSomeBadGrades into 5 small strings at each place where ", " occurs
+print aListOfSomeBadGrades #this will print "['30.76', '64.32', '21.0', '34.98', '54.36']"
+
+sumOfBadGrades = 0.0
+for badGrade in aListOfSomeBadGrades: #iterate through the list so that we can perform operations on each item
+	sumOfBadGrades += float(badGrade)
+myBadAverage = sumOfBadGrades / len(aListOfSomeBadGrades)
+
+print myBadAverage #this shows us the average of all our bad grades - it prints "41.084"
+```

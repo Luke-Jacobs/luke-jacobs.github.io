@@ -49,7 +49,9 @@ This example greets someone based on their name. If the person's name is "Mr Ste
 
 ![If Example Flowchart](imgs/flowchart_ifexample.png)
 
-This flowchart helps you see all the branches that a program can go down. In a real-world program, you might see thousands of branches leading to thousands of other branches, allowing the program to end up in **millions** of different places. 
+This flowchart helps you see all the branches that a program can go down. In a real-world program, you might see thousands of branches leading to thousands of other branches, allowing the program to end up in **billions** of different places. 
+
+# More Examples
 
 ```python
 #Example 1
