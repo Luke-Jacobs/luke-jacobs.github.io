@@ -98,4 +98,4 @@ else:
    else:
    	   a = 4
    ```
-
+7. Write a conditional that prints 
