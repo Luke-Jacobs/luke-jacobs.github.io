@@ -65,7 +65,7 @@ else True:
 #Example 2
 if 2 + 2 == 5:
 	#this code is NEVER run, since the condition is ALWAYS False
-elif False:
+elif True:
 	#this code is ALWAYS run, since the condition before it is false and this condition is ALWAYS true
 	
 #Example 3

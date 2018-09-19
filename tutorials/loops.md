@@ -13,7 +13,7 @@ There are two types of loops in Python:
 - `for` loop - interates through an iterable item
 - `while` loop - runs _while_ an expression is true
 
-Don't worry if those definitions are confusing, because I'll be explaining them. A `for` loop iterates (or cycles) through an iterable variable, like a list. On each cycle, the **loop variable** is set to a different value. This is the format for a `for` loop (remember this!):
+Don't worry if those definitions are confusing, because I'll be explaining them. A `for` loop iterates (or cycles) through an **iterable variable**, like a list. On each cycle, the **loop variable** is set to a different value. This is the format for a `for` loop (remember this!):
 
 # For Loop Format
 
@@ -80,7 +80,21 @@ while expression:
 	here
 ```
 
-This is where comparison operators come into play -------
+This is like a repeated conditional. Python runs the code inside the loop over and over again until the **while condition** becomes `False`. When that happens, Python moves on to the code underneath it. This is like a `for` loop except that this loop runs as long as its condition is `True`. A `for` loop only runs as many times as there are items in the iterable variable.
+
+```python
+#Simple Password Program
+passwordWrong = True
+while passwordWrong:
+	password = raw_input("Password:") #this is an operation called a function that retrieves user input and puts it in a string
+	if password == "1L0V3CSCLUB":
+		passwordWrong = False #this will make the while condition False
+	else:
+		print "That password it wrong! Try again!"
+print "That password is correct!"
+```
+
+
 
 # Real-World Example
 
@@ -95,7 +109,18 @@ for year in years:
 
 This code block writes NY Times article properties to a file given a range of years. I chose to grab all the article data from 1852 to 2017. I'm so glad I don't pay for internet by the byte! Oh, and by the way this took under a minute to grab and write to a file! 
 
+```python
+for i in range(int(duration*self.SAMPLE_RATE)):
+    if self.channels == 1:
+        self.data += [[(random.random() * 2) - 1]]
+    elif self.channels == 2:
+        self.data += [[random.uniform(-1, 1), random.uniform(-1, 1)]]
+```
+
+This code block is a part of a function that generates static that you can use for various audio manipulations. `duration*self.SAMPLE_RATE` is how many data points to write to the sound file. `self.data` is the variable that holds all the audio data. `random` is a Python package that is used to generate random numbers, so I used those numbers to make static.
+
 # Exercises
 
 1. Write a program to add all the numbers from 50 to 100.
+2. 
 
