@@ -1,5 +1,5 @@
 ---
-title: Conditionals (Not Finished)
+title: Conditionals
 layout: jumbotron
 back: /tutorials/operators
 next: /tutorials/loops
@@ -27,7 +27,7 @@ else:
 	if neither condition is true
 ```
 
-Conditionals ALWAYS have at least an `if`, a condition that follows, a colon, and an indented block of code that follows on the next lines. Conditionals can have an unlimited amount of `elif` blocks. `elif` stands for `else if`, which means if the previous condition was `False`, test this condition. Finally, you can add an optional `else` block which runs its indented code section if ALL of the previous conditions were false. I'm sure you did not absorb all of that, so let's look at a specific example!
+Conditionals ALWAYS have at least an `if`, a condition that follows, a colon, and an indented block of code that follows on the next lines. Conditionals can have an unlimited amount of `elif` blocks. `elif` stands for `else if`, which means if the previous condition was `False`, the program will test this condition. Finally, you can add an optional `else` block which runs its indented code section if ALL of the previous conditions were false. I'm sure you did not absorb all of that, so let's look at a specific example!
 
 # Specific Examples
 

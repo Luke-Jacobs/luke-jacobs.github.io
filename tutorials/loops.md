@@ -122,5 +122,6 @@ This code block is a part of a function that generates static that you can use f
 # Exercises
 
 1. Write a program to add all the numbers from 50 to 100.
-2. 
+2. Write a program that loops over a list of strings and prints each one out.
+3. Ask Luke for more exercises!
 
