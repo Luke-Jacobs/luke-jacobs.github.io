@@ -1,5 +1,5 @@
 ---
-title: Strings (Not Finished)
+title: Strings
 next: /tutorials/functions
 back: /tutorials/operators
 layout: jumbotron
@@ -67,7 +67,15 @@ print mySchool[::] #this is an omission of both indices, and it is the same thin
 This is a string operation that I use ALOT. This operation splits a string into substrings at a **separator**. Python uses the **separator** as a place to cut a string. This operation allows us to iterate through parts of a string. We can essentially convert a string into a list of small strings. Here are some examples of the split operation:
 
 ```python
-TBA
+itemsToBake = "Cabbage Wheel Cheese Bread" #itemsToBake is a string
+itemsToBake = itemsToBake.split(" ") #itemsToBake is now a list of small strings
+firstItemToBake = itemsToBake[0] #this is "Cabbage"
+firstTwoItemsToBake = itemsToBake[:2] #this is ["Cabbage", "Wheel"]
+
+sentence = "I love to use semicolons; they join two independent clauses"
+sentenceParts = sentence.split("; ") #split at each occurence of "; "
+part1 = sentenceParts[0] #the item at index 0 is the first item!
+part2 = sentenceParts[1] #the item at index 1 is the second item
 ```
 
 # Real-World Examples
@@ -80,8 +88,13 @@ print aListOfSomeBadGrades #this will print "['30.76', '64.32', '21.0', '34.98',
 
 sumOfBadGrades = 0.0
 for badGrade in aListOfSomeBadGrades: #iterate through the list so that we can perform operations on each item
-	sumOfBadGrades += float(badGrade)
-myBadAverage = sumOfBadGrades / len(aListOfSomeBadGrades)
+	sumOfBadGrades += float(badGrade) #convert each string to a floating-point number (just a decimal) and add it to our sum!
+myBadAverage = sumOfBadGrades / len(aListOfSomeBadGrades) #take our sum and divide it by how many grades we have - this will give us an average
 
 print myBadAverage #this shows us the average of all our bad grades - it prints "41.084"
 ```
+
+# Exercises
+
+1. What code would I write to extract the "A" from "ABCDEF"?
+2. Ask Luke for more exercises. 
