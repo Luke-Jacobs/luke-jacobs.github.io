@@ -18,7 +18,13 @@ It is hard to start programming because the results of learning come much later.
   - Assignment
 3. Conditionals
 
-# Description
+# Procedure
 
-Have the program generate a random word. Print as many blanks as letters in the word. Ask the user for a guess. Determine if the guess is correct or invalid. If the guess is correct, update the displayed word. If the guess is wrong, decrease the amount of "lives" that the user has. Continue until the user has lost or guessed the whole word.
+1. Have the program generate a random word. 
+2. Print as many blanks as letters in the word. 
+3. Ask the user for a guess. 
+4. Determine if the guess is correct or invalid. 
+5. If the guess is correct, update the displayed word. 
+6. If the guess is wrong, decrease the amount of "lives" that the user has. 
+7. Continue until the user has lost or guessed the whole word.
 
