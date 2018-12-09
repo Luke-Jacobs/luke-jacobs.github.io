@@ -1,6 +1,8 @@
 ---
 title: Hangman Project
 layout: jumbotron
+next: walkthrough
+back: #
 ---
 
 # Overview
@@ -16,7 +18,10 @@ It is hard to start programming because the results of learning come much later.
 2. Array indexing
   - Retrieval
   - Assignment
+  - Appending
 3. Conditionals
+4. Using ```random``` to choose a random element from a list
+
 
 # Procedure
 
@@ -25,6 +30,6 @@ It is hard to start programming because the results of learning come much later.
 3. Ask the user for a guess. 
 4. Determine if the guess is correct or invalid. 
 5. If the guess is correct, update the displayed word. 
-6. If the guess is wrong, decrease the amount of "lives" that the user has. 
+6. If the guess is wrong, decrease the amount of "lives" that the user has.
 7. Continue until the user has lost or guessed the whole word.
 
