@@ -16,23 +16,23 @@ back: #
 
 # Step-by-step
 
-### What variables do we need to make?
+## What variables do we need to make?
 
 	* An array to hold our random word
 	* An array of letters to hold the visible word - the one with blanks and guessed letters
 	* A string to hold the letter that the user has guessed
 	* An array of previous guessed letters (so that the user cannot guess the same letter twice)
 
-### What additional modules do we need to use?
+## What additional modules do we need to use?
 
 	* ```random``` - We need to use this built-in module so that we can choose a random word from our vocabulary
 
-### What functions do we need to make?
+## What functions do we need to make?
 
 	* ```getrandomword``` - grabs a random word from our vocabulary
 	* ```play``` - this function will start the game cycle
 
-### More suggestions
+## More suggestions
 
 My code contained:
 
