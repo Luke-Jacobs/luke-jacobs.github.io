@@ -7,7 +7,7 @@ back: #
 
 # Overview
 
-It is hard to start programming because the results of learning come much later. However, this project should give good results if you work at it long enough. We will be making a console game for hangman.
+It is hard to start programming because the results of learning come much later. However, this project should give good results if you work at it long enough. We will be making a command-line game for hangman.
 
 # Understandings
 
