@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Operators
+    </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Python Tutorials</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" href="tutorials">Instruction</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/tutorials/intro_to_python">1. Intro to Python</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/intro_to_variables">2. Intro to Variables</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/operators">3. Operators</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/conditionals">4. Conditionals</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/loops">5. Loops</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/strings">6. Strings</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/functions">7. Functions</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" role="button" href="/tutorials/hangman/intro">Hangman Project</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" role="button" href="/reference">Reference</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+<div class="container content">
+    <h1 id="what-are-operators">What are operators?</h1>
+
+<p>In the last lesson you learned what variables are and how to initialize them with values. In this lesson we will learn how to perform simple operations on multiple variables. These simple operations are called <strong>operators</strong>, and the two variables that the operator operates on are called <strong>operands</strong>. You must make sure that you have initialized BOTH operands before you do an operation on them. If either variable doesn’t have a value, Python will give you an error. There are a few types of operators:</p>
+
+<ul>
+  <li>Arithmetic Operators - performs math on two variables</li>
+  <li>Comparison Operators - compares two variables</li>
+  <li>Assignment Operators - performs math on two variables and sets the left operand equal to the result</li>
+  <li>Logical Operators - performs a logical operation on one or more variables</li>
+  <li>Membership / In Operator - returns true when one variable is in another variable</li>
+</ul>
+
+<h1 id="arithmetic-operators">Arithmetic Operators</h1>
+
+<p>You’ve already seen these before, so these should be easy.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="c1">#Addition
+</span><span class="n">result</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="c1">#result is now 15
+</span><span class="n">result</span> <span class="o">=</span> <span class="s">"AB"</span> <span class="o">+</span> <span class="s">"CD"</span> <span class="c1">#result is now "ABCD"
+#Subtraction
+</span><span class="n">result</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span> <span class="c1">#result is now -5
+#Multiplication
+</span><span class="n">result</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span> <span class="c1">#result is now 50
+</span><span class="n">result</span> <span class="o">=</span> <span class="s">"AB"</span> <span class="o">*</span> <span class="mi">4</span> <span class="c1">#result is now ABABABAB ("AB" copied 4 times)
+#Division
+</span><span class="n">result</span> <span class="o">=</span> <span class="n">b</span> <span class="o">/</span> <span class="n">a</span> <span class="c1">#result is now 2
+#Modulus (Remainder)
+</span><span class="n">result</span> <span class="o">=</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span> <span class="c1">#result is now 5 because the remainder of 5 / 10 is 5
+</span><span class="n">result</span> <span class="o">=</span> <span class="n">b</span> <span class="o">%</span> <span class="n">a</span> <span class="c1">#result is now 0 because the remainder of 10 / 5 is 0
+#Exponent
+</span><span class="n">result</span> <span class="o">=</span> <span class="n">a</span><span class="o">**</span><span class="n">b</span> <span class="c1">#result is now 9765625, 5 raised to the 10th power
+</span></code></pre></div></div>
+
+<h1 id="comparison-operators">Comparison Operators</h1>
+
+<p>These operators compare two variables and return either <code class="highlighter-rouge">True</code> or <code class="highlighter-rouge">False</code>. In computer science, a value that is either true or false is called a <strong>boolean</strong> (named after George Boole apparently).</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#Equality (==) - evaluates to true ONLY IF both A and B are EQUAL - make sure to use TWO equal signs for this
+</span><span class="bp">True</span> <span class="o">==</span> <span class="bp">False</span> <span class="c1">#False
+</span><span class="bp">True</span> <span class="o">==</span> <span class="bp">True</span> <span class="c1">#True
+</span><span class="bp">False</span> <span class="o">==</span> <span class="bp">False</span> <span class="c1">#True
+</span><span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span> <span class="c1">#False
+</span><span class="s">"Apple"</span> <span class="o">==</span> <span class="s">"Apple"</span> <span class="c1">#True
+</span><span class="s">"apple"</span> <span class="o">==</span> <span class="s">"Apple"</span> <span class="c1">#False - even if only one character is different!
+</span>
+<span class="c1">#Inequality (!=) - evaluates to true if A and B are DIFFERENT - the opposite of equality
+</span><span class="bp">True</span> <span class="o">!=</span> <span class="bp">False</span> <span class="c1">#True
+</span><span class="s">"A"</span> <span class="o">!=</span> <span class="s">"B"</span> <span class="c1">#True
+</span><span class="s">"A"</span> <span class="o">!=</span> <span class="s">"A"</span> <span class="c1">#False
+</span>
+<span class="c1">#Greater Than (&gt;) / Less Than (&lt;)
+</span><span class="mi">10</span> <span class="o">&gt;</span> <span class="mi">5</span> <span class="c1">#True
+</span><span class="mf">5.67</span> <span class="o">&gt;</span> <span class="mf">5.0</span> <span class="c1">#True
+</span><span class="mi">7</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="c1">#True
+</span><span class="mi">582099</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="o">**</span><span class="mi">10</span> <span class="c1">#False
+</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">7</span> <span class="o">&gt;</span> <span class="mi">5</span> <span class="c1">#True
+</span>
+<span class="c1">#Greater Than Equal To (&gt;=) / Less Than Equal To (&lt;=)
+</span><span class="mi">10</span> <span class="o">&gt;=</span> <span class="mi">10</span> <span class="c1">#True
+</span><span class="mf">6.0</span> <span class="o">&lt;=</span> <span class="mf">7.0</span> <span class="c1">#True
+</span></code></pre></div></div>
+
+<h1 id="assignment-operators">Assignment Operators</h1>
+
+<p>These operators perform an arithmetic operation on two variables, then store the result in the left operand. Make sure you know what += and -= do, since these are the most important assignment operators.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="c1">#Addition to left operand (+=)
+#this is the same as a = a + b
+</span><span class="n">a</span> <span class="o">+=</span> <span class="n">b</span> <span class="c1">#a is now its previous value + b's value, so in this case it is 15
+#Subtraction from left operand (-=)
+#this is the same as a = a - b
+</span><span class="n">a</span> <span class="o">-=</span> <span class="n">b</span> <span class="c1">#a is now 5
+#Multiplication to left operand (*=)
+#this is the same as a = a * b
+</span><span class="n">a</span> <span class="o">*=</span> <span class="n">b</span> <span class="c1">#a is now 50
+#Division from left operand (/=)
+#this is the same as a = a / b
+</span><span class="n">a</span> <span class="o">/=</span> <span class="n">b</span> <span class="c1">#a is now 5
+</span>
+</code></pre></div></div>
+
+<h1 id="logical-operators">Logical Operators</h1>
+
+<p>These operators perform logic on two booleans (a true or false value). They are normally used to combine comparison operators so that the program can make multiple comparisons at once. What is awesome about computer science is that it is built on logic, and I know that all of you are either taking logic or have taken logic, so you should be able to apply some of your logic skills to programming! Here are some examples:</p>
+
+<h2 id="and">and</h2>
+
+<p>This operator evaluates to <code class="highlighter-rouge">True</code> if BOTH operands are <code class="highlighter-rouge">True</code>.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="bp">True</span> <span class="ow">and</span> <span class="bp">False</span> <span class="c1">#the right operand is false, so the entire expression is false
+</span><span class="bp">True</span> <span class="ow">and</span> <span class="bp">True</span> <span class="c1">#both operands are true, so the expression is true
+</span>
+<span class="n">myName</span> <span class="o">=</span> <span class="s">"LJ"</span>
+<span class="n">myGrade</span> <span class="o">=</span> <span class="mf">96.0</span>
+
+<span class="n">myName</span> <span class="o">==</span> <span class="s">"LJ"</span> <span class="ow">and</span> <span class="n">myGrade</span> <span class="o">&gt;</span> <span class="mf">76.0</span> <span class="c1">#this is true because myName equals "LJ" AND myGrade is greater than 76.0
+</span><span class="n">myName</span> <span class="o">==</span> <span class="s">"lj"</span> <span class="ow">and</span> <span class="n">myGrade</span> <span class="o">&gt;</span> <span class="mf">50.0</span> <span class="c1">#this is false because myName is not equal to "lj" (even if myGrade is greater than 50.0, the expression is still false because one operand is false)
+</span></code></pre></div></div>
+
+<h2 id="or">or</h2>
+
+<p>This operator evaluates to <code class="highlighter-rouge">True</code> if EITHER operands are <code class="highlighter-rouge">True</code></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="bp">True</span> <span class="ow">or</span> <span class="bp">False</span> <span class="c1">#the left operand is true, so the entire expresson is true
+</span><span class="bp">False</span> <span class="ow">or</span> <span class="bp">False</span> <span class="c1">#neither operand is true, so the expression is false
+</span>
+<span class="n">hasGameTicket</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">hasSeasonTicket</span> <span class="o">=</span> <span class="bp">False</span>
+
+<span class="n">hasGameTicket</span> <span class="ow">or</span> <span class="n">hasSeasonTicket</span> <span class="c1">#this is true because at least one operand is true
+</span></code></pre></div></div>
+
+<h2 id="not">not</h2>
+
+<p>This operator simply makes True False and False True. It flips the value of booleans.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ow">not</span> <span class="bp">True</span> <span class="c1">#this is False
+</span><span class="ow">not</span> <span class="bp">False</span> <span class="c1">#this is True
+</span>
+<span class="n">myAge</span> <span class="o">=</span> <span class="mi">17</span>
+<span class="ow">not</span> <span class="n">myAge</span> <span class="o">==</span> <span class="mi">17</span> <span class="c1">#this is a bad way of writing myAge != 17
+</span></code></pre></div></div>
+
+<h1 id="membership-operator--in-operator">Membership Operator / In Operator</h1>
+
+<p>This operator evaluates to True if the left operand is IN the right operand. This is very helpful when you are dealing with lists.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">groceryList</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Iron Rod"</span><span class="p">,</span> <span class="s">"Nuclear Bomb"</span><span class="p">,</span> <span class="s">"Spaghetti"</span><span class="p">]</span>
+
+<span class="s">"Nuclear Bomb"</span> <span class="ow">in</span> <span class="n">groceryList</span> <span class="c1">#this is true
+</span><span class="s">"Eagle Claw"</span> <span class="ow">in</span> <span class="n">groceryList</span> <span class="c1">#this is false, because there is not any item in groceryList that is equal to "Eagle Claw"
+</span>
+<span class="n">someNumbers</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="c1">#the numbers from 1 to 100
+</span>
+<span class="mi">5</span> <span class="ow">in</span> <span class="n">someNumbers</span> <span class="c1">#true because 5 is between 1 and 100
+</span><span class="mi">101</span> <span class="ow">in</span> <span class="n">someNumbers</span> <span class="c1">#false because 101 &gt; 100
+</span></code></pre></div></div>
+
+<h1 id="real-world-examples">Real-World Examples</h1>
+
+<p>This is a snippet of code from a program I made to automatically play minesweeper. This specific block of code calculates the x and y value of where the mouse should be placed to click on a square.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">global</span> <span class="n">mid</span><span class="p">,</span> <span class="n">jumpX</span><span class="p">,</span> <span class="n">jumpY</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">mid</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">jumpX</span><span class="o">*</span><span class="n">place</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">mid</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">jumpY</span><span class="o">*</span><span class="n">place</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>This is some code that used to generate a sine wave of a certain frequency. This wave can then be put into an audio file so that we can create some musical tones!</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">freq</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="nb">float</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">sampleRate</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h1 id="summary">Summary</h1>
+
+<p>Wow that was alot of information! Unfortunately you will need to know all of these operators if you want to make a big program. But if you complete these exercises, you will know everything that you need relating to operators! I highly suggest looking back to this page if you need reference.</p>
+
+<h1 id="exercises">Exercises</h1>
+
+<ol>
+  <li>Use Python to find 6 raised to the 5th power.</li>
+  <li>Initialize two variables and compare them in some way</li>
+  <li>Let’s say that <code class="highlighter-rouge">a = 456</code> and <code class="highlighter-rouge">b = 713</code>. What is the value of <code class="highlighter-rouge">a</code> after the operator <code class="highlighter-rouge">a += b</code>?</li>
+  <li>What is <code class="highlighter-rouge">(5 &gt; 10) and (3 &lt; 2)</code>?</li>
+  <li>What is <code class="highlighter-rouge">("Happy" == "Happy") or (False == True)</code>?</li>
+  <li>What operator do I use if I want to test for if an item is in a list?</li>
+</ol>
+
+</div>
+
+
+<div class="container bottom-nav">
+    <a href="/tutorials/loops" style="text-align: left">
+        <h3 style="text-align: center;">Next lesson</h3>
+    </a>
+    <a href="/tutorials/intro_to_python" style="text-align: right">
+        <h3 style="text-align: center;">Previous lesson</h3>
+    </a><br>
+</div>
+
+
+<footer>
+    <ul>
+        <li>Python tutorial site by Luke Jacobs
+        </li>
+    </ul>
+</footer>
+    
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 ---
-layout: jumbotron
+layout: lesson
 title: Operators
 next: /tutorials/loops
 back: /tutorials/intro_to_python

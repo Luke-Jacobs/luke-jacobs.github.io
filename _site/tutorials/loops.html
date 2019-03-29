@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Loops
+    </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Python Tutorials</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" href="tutorials">Instruction</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/tutorials/intro_to_python">1. Intro to Python</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/intro_to_variables">2. Intro to Variables</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/operators">3. Operators</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/conditionals">4. Conditionals</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/loops">5. Loops</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/strings">6. Strings</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/functions">7. Functions</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" role="button" href="/tutorials/hangman/intro">Hangman Project</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" role="button" href="/reference">Reference</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<div class="jumbotron"
+    style="background-image:url(/tutorials/imgs/loops2.png); background-size: cover; background-position: center;">
+    <h1 class="display-4" style="text-align:center;">
+        
+        Loops
+        
+    </h1>
+</div>
+
+
+<div class="container content">
+    <p>Loops do the heavy lifting in a program, allowing it to do things that humans cannot. For example, a security system might have a loop integrated into its program to check a camera once every second. Computers are always vigilant, unlike some security guards, and you don’t have to pay them! Loops simply execute a block of code over and over again until a stopping point.</p>
+
+<p>There are two types of loops in Python:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">for</code> loop - interates through an iterable item</li>
+  <li><code class="highlighter-rouge">while</code> loop - runs <em>while</em> an expression is true</li>
+</ul>
+
+<p>Don’t worry if those definitions are confusing, because I’ll be explaining them. A <code class="highlighter-rouge">for</code> loop iterates (or cycles) through an <strong>iterable variable</strong>, like a list. On each cycle, the <strong>loop variable</strong> is set to a different value. This is the format for a <code class="highlighter-rouge">for</code> loop (remember this!):</p>
+
+<h1 id="for-loop-format">For Loop Format</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">loop_variable</span> <span class="ow">in</span> <span class="n">iterable_variable</span><span class="p">:</span>
+	<span class="n">do</span>
+	<span class="n">something</span>
+	<span class="n">here</span>
+</code></pre></div></div>
+
+<p>A specific example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">toDoList</span> <span class="o">=</span> <span class="p">[</span><span class="s">"eat brick"</span><span class="p">,</span> <span class="s">"fly sideways"</span><span class="p">,</span> <span class="s">"photograph the moon"</span><span class="p">]</span> <span class="c1">#initialize todo list
+</span>
+<span class="k">for</span> <span class="n">thingToDo</span> <span class="ow">in</span> <span class="n">toDoList</span><span class="p">:</span> <span class="c1">#loop through each item
+</span>	<span class="k">print</span> <span class="n">thingToDo</span> <span class="c1">#print each item
+</span></code></pre></div></div>
+
+<p>This program simply prints my todo list item by item. What Python is doing is initializing <code class="highlighter-rouge">thingToDo</code> with every item in <code class="highlighter-rouge">toDoList</code>, then running the indented code section underneath it (called the loop block). When the indented section is done, it cycles back around to the top of the indented section until it has cycled through the entire list. With this loop you can perform an operation given <strong>each item</strong> in a list.</p>
+
+<p>Another example is multiplying the numbers from 1 to 100. (I don’t know why any sane individual would want to do that, but let’s do it anyway!) Here is the code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#this is the variable we will be multiplying by each number
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">):</span> <span class="c1">#this is the top of the loop
+</span>	<span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">*</span> <span class="n">i</span> <span class="c1">#with each loop, n's value is increasing
+</span><span class="k">print</span> <span class="n">n</span> <span class="c1">#display the final value of n
+</span></code></pre></div></div>
+
+<p>Let’s explain what’s going on here. On the first line, <code class="highlighter-rouge">n</code> is set to the value of 1. On the next line, the loop is setup: <code class="highlighter-rouge">i</code> is our loop variable and <code class="highlighter-rouge">range(1, 100)</code> is our iterable variable. This means that Python will cycle through the contents of <code class="highlighter-rouge">range(1, 100)</code> and for each item in that variable, <code class="highlighter-rouge">i</code> will be set to that variable. So on the first loop <code class="highlighter-rouge">i</code> is equal to 1. On the next loop <code class="highlighter-rouge">i</code> is equal to 2, and so on. The third line is the indented, so this will be the code that we will run for each item in our iterable. In this case, <code class="highlighter-rouge">n</code> is being set to its current value times the value of <code class="highlighter-rouge">i</code>. This means that <code class="highlighter-rouge">n</code> is always getting larger in value, because <code class="highlighter-rouge">i</code> is growing in value as the program runs. At the end of the program, the value of <code class="highlighter-rouge">n</code> will be the product of all the numbers from 1 to 100!</p>
+
+<p>Here is an example of a more difficult-to-understand program, but I’m sure you guys will be able to figure it out!</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">xValues</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="c1">#numbers from 1 to 100
+</span><span class="n">yValues</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1">#this is an empty list
+</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">xValues</span><span class="p">:</span> <span class="c1">#loop start
+</span>	<span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">5</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="mi">8</span> <span class="c1">#this is the most important line
+</span>	<span class="n">yValues</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="c1">#add y value to the list
+</span>	
+<span class="k">print</span> <span class="n">yValues</span>
+</code></pre></div></div>
+
+<p>This program fills the list <code class="highlighter-rouge">yValues</code> with 100 numbers. Each number in the list is the output of <code class="highlighter-rouge">x**2 + 5*x + 8</code> given a certain <code class="highlighter-rouge">x</code> value. Let’s look at the start of the loop. On the first cycle of the loop, what is the value of <code class="highlighter-rouge">x</code>? Well, it is just the first item in the list <code class="highlighter-rouge">xValues</code>. We know that <code class="highlighter-rouge">xValues</code> is just a list of all the numbers from 1 to 100, so the first item in the list is just 1. That means on the first iteration of our loop, <code class="highlighter-rouge">x</code> is 1. On the next iteration, it is the next item in the list <code class="highlighter-rouge">xValues</code>, which is 2. On each iteration, there is a value added to the <code class="highlighter-rouge">yValues</code> list. This value is dependent on the value of x, because <code class="highlighter-rouge">y = x**2 + 5*x + 8</code>. I hope you can visualize what is going on. The output of this program is always:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="mi">14</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">44</span><span class="p">,</span> <span class="mi">58</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">112</span><span class="p">,</span> <span class="mi">134</span><span class="p">,</span> <span class="mi">158</span><span class="p">,</span> <span class="mi">184</span><span class="p">,</span> <span class="mi">212</span><span class="p">,</span> <span class="mi">242</span><span class="p">,</span> <span class="mi">274</span><span class="p">,</span> <span class="mi">308</span><span class="p">,</span> <span class="mi">344</span><span class="p">,</span> <span class="mi">382</span><span class="p">,</span> <span class="mi">422</span><span class="p">,</span> <span class="mi">464</span><span class="p">,</span> <span class="mi">508</span><span class="p">,</span> <span class="mi">554</span><span class="p">,</span> <span class="mi">602</span><span class="p">,</span> <span class="mi">652</span><span class="p">,</span> <span class="mi">704</span><span class="p">,</span> <span class="mi">758</span><span class="p">,</span> <span class="mi">814</span><span class="p">,</span> <span class="mi">872</span><span class="p">,</span> <span class="mi">932</span><span class="p">,</span> <span class="mi">994</span><span class="p">,</span> <span class="mi">1058</span><span class="p">,</span> <span class="mi">1124</span><span class="p">,</span> <span class="mi">1192</span><span class="p">,</span> <span class="mi">1262</span><span class="p">,</span> <span class="mi">1334</span><span class="p">,</span> <span class="mi">1408</span><span class="p">,</span> <span class="mi">1484</span><span class="p">,</span> <span class="mi">1562</span><span class="p">,</span> <span class="mi">1642</span><span class="p">,</span> <span class="mi">1724</span><span class="p">,</span> <span class="mi">1808</span><span class="p">,</span> <span class="mi">1894</span><span class="p">,</span> <span class="mi">1982</span><span class="p">,</span> <span class="mi">2072</span><span class="p">,</span> <span class="mi">2164</span><span class="p">,</span> <span class="mi">2258</span><span class="p">,</span> <span class="mi">2354</span><span class="p">,</span> <span class="mi">2452</span><span class="p">,</span> <span class="mi">2552</span><span class="p">,</span> <span class="mi">2654</span><span class="p">,</span> <span class="mi">2758</span><span class="p">,</span> <span class="mi">2864</span><span class="p">,</span> <span class="mi">2972</span><span class="p">,</span> <span class="mi">3082</span><span class="p">,</span> <span class="mi">3194</span><span class="p">,</span> <span class="mi">3308</span><span class="p">,</span> <span class="mi">3424</span><span class="p">,</span> <span class="mi">3542</span><span class="p">,</span> <span class="mi">3662</span><span class="p">,</span> <span class="mi">3784</span><span class="p">,</span> <span class="mi">3908</span><span class="p">,</span> <span class="mi">4034</span><span class="p">,</span> <span class="mi">4162</span><span class="p">,</span> <span class="mi">4292</span><span class="p">,</span> <span class="mi">4424</span><span class="p">,</span> <span class="mi">4558</span><span class="p">,</span> <span class="mi">4694</span><span class="p">,</span> <span class="mi">4832</span><span class="p">,</span> <span class="mi">4972</span><span class="p">,</span> <span class="mi">5114</span><span class="p">,</span> <span class="mi">5258</span><span class="p">,</span> <span class="mi">5404</span><span class="p">,</span> <span class="mi">5552</span><span class="p">,</span> <span class="mi">5702</span><span class="p">,</span> <span class="mi">5854</span><span class="p">,</span> <span class="mi">6008</span><span class="p">,</span> <span class="mi">6164</span><span class="p">,</span> <span class="mi">6322</span><span class="p">,</span> <span class="mi">6482</span><span class="p">,</span> <span class="mi">6644</span><span class="p">,</span> <span class="mi">6808</span><span class="p">,</span> <span class="mi">6974</span><span class="p">,</span> <span class="mi">7142</span><span class="p">,</span> <span class="mi">7312</span><span class="p">,</span> <span class="mi">7484</span><span class="p">,</span> <span class="mi">7658</span><span class="p">,</span> <span class="mi">7834</span><span class="p">,</span> <span class="mi">8012</span><span class="p">,</span> <span class="mi">8192</span><span class="p">,</span> <span class="mi">8374</span><span class="p">,</span> <span class="mi">8558</span><span class="p">,</span> <span class="mi">8744</span><span class="p">,</span> <span class="mi">8932</span><span class="p">,</span> <span class="mi">9122</span><span class="p">,</span> <span class="mi">9314</span><span class="p">,</span> <span class="mi">9508</span><span class="p">,</span> <span class="mi">9704</span><span class="p">,</span> <span class="mi">9902</span><span class="p">,</span> <span class="mi">10102</span><span class="p">,</span> <span class="mi">10304</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>I hope you can see from this example that computers are VERY powerful math machines. What a computer can do in milliseconds would take you many excruciating hours of back-breaking, brain-hurting, miserable calculations.</p>
+
+<h1 id="while-loop">While Loop</h1>
+
+<p>This loop executes <em>while</em> an expression is true. This is the format:</p>
+
+<h1 id="while-loop-format">While Loop Format</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="n">expression</span><span class="p">:</span>
+	<span class="n">do</span>
+	<span class="n">something</span>
+	<span class="n">here</span>
+</code></pre></div></div>
+
+<p>This is like a repeated conditional. Python runs the code inside the loop over and over again until the <strong>while condition</strong> becomes <code class="highlighter-rouge">False</code>. When that happens, Python moves on to the code underneath it. This is like a <code class="highlighter-rouge">for</code> loop except that this loop runs as long as its condition is <code class="highlighter-rouge">True</code>. A <code class="highlighter-rouge">for</code> loop only runs as many times as there are items in the iterable variable.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#Simple Password Program
+</span><span class="n">passwordWrong</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="k">while</span> <span class="n">passwordWrong</span><span class="p">:</span>
+	<span class="n">password</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">"Password:"</span><span class="p">)</span> <span class="c1">#this is an operation called a function that retrieves user input and puts it in a string
+</span>	<span class="k">if</span> <span class="n">password</span> <span class="o">==</span> <span class="s">"1L0V3CSCLUB"</span><span class="p">:</span>
+		<span class="n">passwordWrong</span> <span class="o">=</span> <span class="bp">False</span> <span class="c1">#this will make the while condition False
+</span>	<span class="k">else</span><span class="p">:</span>
+		<span class="k">print</span> <span class="s">"That password it wrong! Try again!"</span>
+<span class="k">print</span> <span class="s">"That password is correct!"</span>
+</code></pre></div></div>
+
+<h1 id="real-world-example">Real-World Example</h1>
+
+<p>This is a real-world example of some code I wrote to automatically download NY Times article data from their database. I didn’t do this because I love their articles, but because I wanted a computer to replicate their headlines. I don’t expect you to understand much of it:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="n">years</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">collectInfoByYear</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">keys</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Writing </span><span class="si">%</span><span class="s">d year info to </span><span class="si">%</span><span class="s">s..."</span> <span class="o">%</span> <span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">filename</span><span class="p">))</span>
+    <span class="n">fp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>This code block writes NY Times article properties to a file given a range of years. I chose to grab all the article data from 1852 to 2017. I’m so glad I don’t pay for internet by the byte! Oh, and by the way this took under a minute to grab and write to a file!</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">duration</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">SAMPLE_RATE</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">channels</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">+=</span> <span class="p">[[(</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]]</span>
+    <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">channels</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">+=</span> <span class="p">[[</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)]]</span>
+</code></pre></div></div>
+
+<p>This code block is a part of a function that generates static that you can use for various audio manipulations. <code class="highlighter-rouge">duration*self.SAMPLE_RATE</code> is how many data points to write to the sound file. <code class="highlighter-rouge">self.data</code> is the variable that holds all the audio data. <code class="highlighter-rouge">random</code> is a Python package that is used to generate random numbers, so I used those numbers to make static.</p>
+
+<h1 id="exercises">Exercises</h1>
+
+<ol>
+  <li>Write a program to add all the numbers from 50 to 100.</li>
+  <li>Write a program that loops over a list of strings and prints each one out.</li>
+  <li>Ask Luke for more exercises!</li>
+</ol>
+
+
+</div>
+
+
+<div class="container bottom-nav">
+    <a href="/tutorials/strings" style="text-align: left">
+        <h3 style="text-align: center;">Next lesson</h3>
+    </a>
+    <a href="/tutorials/operators" style="text-align: right">
+        <h3 style="text-align: center;">Previous lesson</h3>
+    </a><br>
+</div>
+
+
+<footer>
+    <ul>
+        <li>Python tutorial site by Luke Jacobs
+        </li>
+    </ul>
+</footer>
+    
+</body>
+
+</html>

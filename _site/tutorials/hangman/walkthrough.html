@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Hangman Hints Part 1
+    </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Python Tutorials</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" href="tutorials">Instruction</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/tutorials/intro_to_python">1. Intro to Python</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/intro_to_variables">2. Intro to Variables</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/operators">3. Operators</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/conditionals">4. Conditionals</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/loops">5. Loops</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/strings">6. Strings</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/functions">7. Functions</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" role="button" href="/tutorials/hangman/intro">Hangman Project</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" role="button" href="/reference">Reference</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+<div class="container content">
+    <h1 id="flowchart">Flowchart</h1>
+
+<p><img src="imgs/flowchart.png" alt="Flowchart" /></p>
+
+<h1 id="background-information">Background Information</h1>
+
+<ul>
+  <li>In my program, I stored the random word as an array of letters. Each letter is simply a string with a length of 1 (ex. “A”, “i”).</li>
+  <li>I suggest using <code class="highlighter-rouge">random.choice</code>.</li>
+</ul>
+
+<h1 id="step-by-step">Step-by-step</h1>
+
+<h2 id="what-variables-do-we-need-to-make">What variables do we need to make?</h2>
+
+<ul>
+  <li>An array to hold our random word</li>
+  <li>An array of letters to hold the visible word - the one with blanks and guessed letters</li>
+  <li>A string to hold the letter that the user has guessed</li>
+  <li>An array of previous guessed letters (so that the user cannot guess the same letter twice)</li>
+</ul>
+
+<h2 id="what-additional-modules-do-we-need-to-use">What additional modules do we need to use?</h2>
+
+<ul>
+  <li><code class="highlighter-rouge">random</code> - We need to use this built-in module so that we can choose a random word from our vocabulary</li>
+</ul>
+
+<h2 id="what-functions-do-we-need-to-make">What functions do we need to make?</h2>
+
+<ul>
+  <li><code class="highlighter-rouge">getrandomword</code> - grabs a random word from our vocabulary</li>
+  <li><code class="highlighter-rouge">play</code> - this function will start the game cycle</li>
+</ul>
+
+<h2 id="more-suggestions">More suggestions</h2>
+
+<p>My code contained:</p>
+
+<ul>
+  <li>2 <code class="highlighter-rouge">while</code> loops</li>
+  <li>1 <code class="highlighter-rouge">for</code> loop</li>
+  <li>2 <code class="highlighter-rouge">if</code> statements</li>
+</ul>
+
+<p>Your code might not use the same number of these components, so these numbers are just guidelines!</p>
+
+<p>You should try to program this now! If you get stuck for more than 10mins then you can move on to the next page where there is more hints. Don’t give up!</p>
+
+</div>
+
+
+<div class="container bottom-nav">
+    <a href="morehints" style="text-align: left">
+        <h3 style="text-align: center;">Next lesson</h3>
+    </a>
+    <a href="" style="text-align: right">
+        <h3 style="text-align: center;">Previous lesson</h3>
+    </a><br>
+</div>
+
+
+<footer>
+    <ul>
+        <li>Python tutorial site by Luke Jacobs
+        </li>
+    </ul>
+</footer>
+    
+</body>
+
+</html>

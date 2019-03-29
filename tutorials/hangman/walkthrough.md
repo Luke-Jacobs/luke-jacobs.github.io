@@ -1,6 +1,6 @@
 ---
 title: Hangman Hints Part 1
-layout: jumbotron
+layout: lesson
 next: morehints
 back: #
 ---

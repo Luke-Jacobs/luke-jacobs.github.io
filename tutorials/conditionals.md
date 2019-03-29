@@ -1,6 +1,6 @@
 ---
 title: Conditionals
-layout: jumbotron
+layout: lesson
 back: /tutorials/operators
 next: /tutorials/loops
 jumboimage: #

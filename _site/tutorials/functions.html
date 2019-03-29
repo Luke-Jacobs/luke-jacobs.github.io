@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Functions
+    </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Python Tutorials</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" href="tutorials">Instruction</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/tutorials/intro_to_python">1. Intro to Python</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/intro_to_variables">2. Intro to Variables</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/operators">3. Operators</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/conditionals">4. Conditionals</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/loops">5. Loops</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/strings">6. Strings</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/functions">7. Functions</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" role="button" href="/tutorials/hangman/intro">Hangman Project</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" role="button" href="/reference">Reference</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+<div class="container content">
+    <h1 id="functions">Functions</h1>
+
+<p>Functions give programmers an easy way to organize and break down code. A function in a broad sense is a chunk of code that can accept inputs, use those inputs in some way, and return an output. You can think of Python functions just like functions in math:</p>
+
+<p>f(x) = x<sup>2</sup> + 3x + 5</p>
+
+<p>or</p>
+
+<p>y = x<sup>2</sup> + 3x + 5</p>
+
+<p>This is a function that requires an x value, performs some calculations on that number (some data), and gives us another number (the y value).</p>
+
+<p>We can make the same setup in Python with even more freedom than math:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+	<span class="k">return</span> <span class="n">x</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="mi">5</span>
+</code></pre></div></div>
+
+<p>(in Python we can’t write 3x because the interpreter gets confused)</p>
+
+<p>While math only lets us use numbers as inputs, Python allows us to use any type of data that we want. We can give a function a list of numbers, a name, GPS coordinates, or all of the book Little Women. We can write a function that does some interesting operations with that data, for example translate its input into Latin or edit the book so that its interesting to read. After it does its assigned operation, it (usually) returns data to its caller.</p>
+
+<p><img src="imgs/hierarchy_of_people.jpg" alt="Hierarchy" /></p>
+
+<p>The best analogy I have to functions is a hired worker. Hired workers are given an assignment to complete, and then after they are done, they return to their boss with their completed work. In an effective company, workers are assigned a position on a hierarchy of roles. There are the grunt workers who just do what they are told, the managers who tell the grunts what to do, and the branch managers who tell the managers what to do, etc, etc. This method works much better than 1000s of workers trying to coordinate with each other or 1 manager managing everyone. The workload is distributed well, so the company does well.</p>
+
+<p>As programmers, we are CEOs trying to build a company from the top down. We have a big job in our heads that we need to turn into functional code. We have to split that big job into little jobs and then split those little jobs into tiny jobs.</p>
+
+<p>Each of those jobs are accomplished by functions. Just like how managers tell workers what to do, functions can offload their work on other functions. When a function enlists the help of another function, the process is called <strong>calling</strong>. A function can <strong>call</strong> another function. The “boss” function is the <strong>caller</strong> and the “worker” function is the <strong>called</strong>.</p>
+
+<p>For example, if you want to write a program to move a tank-like robot wirelessly, you might have a program that looks like this:</p>
+
+<p><img src="imgs/flowchart_example1.png" alt="Flowchart" /></p>
+
+<p>This is a flowchart, a graph that shows how each function in our program is connected. The biggest function is the <strong>main</strong> function, which is just the starting point for our program. The main function calls the function <code class="highlighter-rouge">receiveCommand</code> which is designed to check for any wireless commands that we might have sent to it. <code class="highlighter-rouge">receiveCommand</code> accomplishes its job by relying on the help of the functions <code class="highlighter-rouge">checkConnection</code> and <code class="highlighter-rouge">readData</code>. After <code class="highlighter-rouge">receiveCommand</code> is finished, the program now knows what command it is supposed to execute. The main function then calls <code class="highlighter-rouge">executeCommand</code> to actually run this command. Hopefully this gives you a good idea how programs are structured and how functions call other functions.</p>
+
+<h1 id="exercises">Exercises</h1>
+
+<ol>
+  <li>TBD</li>
+</ol>
+
+</div>
+
+
+<div class="container bottom-nav">
+    <a href="/tutorials/#" style="text-align: left">
+        <h3 style="text-align: center;">Next lesson</h3>
+    </a>
+    <a href="/tutorials/loops" style="text-align: right">
+        <h3 style="text-align: center;">Previous lesson</h3>
+    </a><br>
+</div>
+
+
+<footer>
+    <ul>
+        <li>Python tutorial site by Luke Jacobs
+        </li>
+    </ul>
+</footer>
+    
+</body>
+
+</html>

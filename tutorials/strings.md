@@ -2,7 +2,7 @@
 title: Strings
 next: /tutorials/functions
 back: /tutorials/operators
-layout: jumbotron
+layout: lesson
 ---
 
 # What are strings?

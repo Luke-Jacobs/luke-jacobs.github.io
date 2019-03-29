@@ -1,6 +1,6 @@
 ---
 title: Loops
-layout: jumbotron
+layout: lesson
 next: /tutorials/strings
 back: /tutorials/operators
 jumboimage: /tutorials/imgs/loops2.png
@@ -42,7 +42,7 @@ n = 1 #this is the variable we will be multiplying by each number
 for i in range(1, 100): #this is the top of the loop
 	n = n * i #with each loop, n's value is increasing
 print n #display the final value of n
-```  
+```
 
 Let's explain what's going on here. On the first line, `n` is set to the value of 1. On the next line, the loop is setup: `i` is our loop variable and `range(1, 100)` is our iterable variable. This means that Python will cycle through the contents of `range(1, 100)` and for each item in that variable, `i` will be set to that variable. So on the first loop `i` is equal to 1. On the next loop `i` is equal to 2, and so on. The third line is the indented, so this will be the code that we will run for each item in our iterable. In this case, `n` is being set to its current value times the value of `i`. This means that `n` is always getting larger in value, because `i` is growing in value as the program runs. At the end of the program, the value of `n` will be the product of all the numbers from 1 to 100!
 

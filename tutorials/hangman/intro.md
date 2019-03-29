@@ -1,6 +1,6 @@
 ---
 title: Hangman Project
-layout: jumbotron
+layout: lesson
 next: walkthrough
 back: #
 ---

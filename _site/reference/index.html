@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        
+    </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Python Tutorials</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" href="tutorials">Instruction</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/tutorials/intro_to_python">1. Intro to Python</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/intro_to_variables">2. Intro to Variables</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/operators">3. Operators</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/conditionals">4. Conditionals</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/loops">5. Loops</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/strings">6. Strings</a></li>
+                    <li><a class="dropdown-item" href="/tutorials/functions">7. Functions</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" role="button" href="/tutorials/hangman/intro">Hangman Project</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" role="button" href="/reference">Reference</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+<div class="container content">
+    <h1 id="concepts">Concepts</h1>
+
+<ul>
+  <li>
+    <h3 id="assigning-variables">Assigning variables</h3>
+    <p>You assign a variable a value by following this format: <code class="highlighter-rouge">variableName = variableValue</code>.</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">myVar</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">myName</span> <span class="o">=</span> <span class="s">"My name is Charles"</span>
+<span class="n">myUserInput</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"This is a prompt for the user to enter some text:"</span><span class="p">)</span>
+<span class="n">aBigNumber</span> <span class="o">=</span> <span class="mi">5</span><span class="o">**</span><span class="mi">10</span>  <span class="c1"># 5 to the power of 10
+</span></code></pre></div>    </div>
+
+    <p>Do not use the double equals sign (<code class="highlighter-rouge">==</code>)! That is for comparators!</p>
+  </li>
+  <li>
+    <h3 id="operators">Operators</h3>
+
+    <p>Operators are symbols that perform operators on one or more variables. For example:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">9</span>
+  
+<span class="c1"># Simple math
+</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span>  <span class="c1"># Addition
+</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span>  <span class="c1"># Subtraction
+</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span>  <span class="c1"># Multiplication
+</span><span class="n">a</span> <span class="o">/</span> <span class="n">b</span>  <span class="c1"># Division
+</span>  
+<span class="c1"># Comparison - used in "if" blocks
+</span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span>  <span class="c1"># Returns True if a equals b
+</span><span class="n">a</span> <span class="o">!=</span> <span class="n">b</span>  <span class="c1"># Returns True if a is not equal to b
+</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span>   <span class="c1"># Returns True if a is greater than b
+</span><span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span>   <span class="c1"># Returns True if b is greater than a
+</span>  
+<span class="c1"># Membership - used in lists
+</span><span class="n">myList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+<span class="n">a</span> <span class="ow">in</span> <span class="n">myList</span>  <span class="c1"># Returns True if a (5) is in myList
+</span><span class="mi">10</span> <span class="ow">in</span> <span class="n">myList</span> <span class="c1"># This is False
+</span><span class="n">a</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">myList</span>  <span class="c1"># Returns False because a is in myList
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <h3 id="loops">Loops</h3>
+
+    <p>Loops do things multiple times. Each loop is a little different.</p>
+
+    <ul>
+      <li>
+        <p>The <code class="highlighter-rouge">for</code> loop iterates over a list. This means it runs its assigned code block for every item in a given list. For example:</p>
+
+        <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">myLetters</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'z'</span><span class="p">,</span> <span class="s">'y'</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">myLetters</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Let's say another letter:"</span><span class="p">,</span> <span class="n">letter</span><span class="p">)</span>  <span class="c1"># Prints a different letter each run-through of the loop
+</span>    
+<span class="n">myName</span> <span class="o">=</span> <span class="s">"Luke Jacobs"</span>
+<span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">myName</span><span class="p">:</span>
+    <span class="c1"># Do something with "letter"
+</span>    <span class="c1"># FYI - at one point in the loop, letter is equal to " ", a space character. Spaces count as characters too!
+</span>    
+<span class="n">myNumbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">56</span><span class="p">,</span> <span class="mi">6212</span><span class="p">,</span> <span class="mi">948390583209</span><span class="p">]</span>
+<span class="n">mySum</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">myNumbers</span><span class="p">:</span>
+    <span class="n">mySum</span> <span class="o">=</span> <span class="n">mySum</span> <span class="o">+</span> <span class="n">n</span>
+<span class="c1"># (This code adds up all the numbers in this list)
+</span></code></pre></div>        </div>
+      </li>
+      <li>
+        <p>The <code class="highlighter-rouge">while</code> loop runs <em>while</em> a given condition is True.</p>
+
+        <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">myAge</span> <span class="o">=</span> <span class="mi">17</span>
+<span class="n">whenIDie</span> <span class="o">=</span> <span class="mi">32</span>  <span class="c1"># Probably a hang-gliding accident
+</span><span class="k">while</span> <span class="p">(</span><span class="n">myAge</span> <span class="o">&lt;</span> <span class="n">whenIDie</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'You are still alive for this year!'</span><span class="p">)</span>
+    <span class="n">myAge</span> <span class="o">=</span> <span class="n">myAge</span> <span class="o">+</span> <span class="mi">1</span>  <span class="c1"># Increment my age by 1 - AKA I had a birthday
+</span><span class="k">print</span><span class="p">(</span><span class="s">'You have died :('</span><span class="p">)</span>
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <h3 id="functions">Functions</h3>
+
+    <p>I don’t have enough time to do all this. I have a life too, you know.</p>
+  </li>
+</ul>
+
+
+</div>
+
+
+
+<footer>
+    <ul>
+        <li>Python tutorial site by Luke Jacobs
+        </li>
+    </ul>
+</footer>
+    
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 ---
-layout: jumbotron
+layout: lesson
 title: Intro to Variables
 next: /tutorials/operators
 back: /tutorials/intro_to_python
